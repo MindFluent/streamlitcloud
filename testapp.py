@@ -12,9 +12,9 @@ authenticator = stauth.authenticate(names,usernames,hashed_passwords,'cookie_nam
 name, authentication_status = authenticator.login('Login','sidebar')
 
 if authentication_status:
- st.write(‘Welcome *%s*’ % (name))
+ st.write("Welcome *%s*" % (name))
  # your application
  elif authentication_status == False:
-  st.error(‘Username/password is incorrect’)
+  st.error("Username/password is incorrect")
  elif authentication_status == None:
-  st.warning(‘Please enter your username and password’)
+  st.warning("Please enter your username and password")
